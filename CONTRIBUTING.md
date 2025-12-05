@@ -1,50 +1,49 @@
 # Contributing to MailPicker (mpkr)
 
-Thank you for your interest in contributing to MailPicker. At this stage, the project is in **early development (Phase 0)** and not yet ready for functional contributions. However, we welcome ideas, feedback, and future participation once the architecture stabilizes.
+Thank you for your interest in contributing to MailPicker. The project is currently in **early development (Phase 0)** and is primarily a skeleton for the future C++ implementation. While functional contributions are not yet applicable, we welcome ideas, feedback, and preparatory contributions that do not alter the core skeleton.
 
 ---
 
 ## Current Status
 
-* Project is a skeleton for later C++ implementation.
-* Contains tooling, pre-commit hooks, and project structure.
-* No functional features are implemented.
+* Project provides initial tooling, pre-commit hooks, and project structure.
+* No functional features are implemented yet.
 
-**Do not submit pull requests for usage features yet.** Contributions should focus on documentation, architecture suggestions, or preparatory work that does not affect the skeleton.
+**Do not submit pull requests for usage features at this stage.** Focus on documentation, architecture suggestions, or preparatory work that supports the skeleton.
 
 ---
 
 ## How to Contribute (Future Phases)
 
-Once development progresses, contributions will be organized around these areas:
+Once development progresses, contributions will be organized around the following areas:
 
 ### 1. Core Modules
 
-* AuthManager
-* IMAP Client
-* DatabaseManager
-* SearchInterface (fzf wrapper)
-* ConfigManager
+* AuthManager  
+* IMAP Client  
+* DatabaseManager  
+* SearchInterface (fzf wrapper)  
+* ConfigManager  
 
 ### 2. Security & Infrastructure
 
-* OAuth2 PKCE implementation
-* Secure token handling
-* Pre-commit and CI enhancements
-* Cross-platform build and packaging
+* OAuth2 PKCE implementation  
+* Secure token handling  
+* Pre-commit and CI enhancements  
+* Cross-platform build and packaging  
 
 ### 3. Documentation
 
-* Developer guides
-* API documentation
-* Architecture diagrams
-* Tutorials
+* Developer guides  
+* API documentation  
+* Architecture diagrams  
+* Tutorials  
 
 ### 4. Testing
 
-* Unit tests for modules
-* Integration tests for IMAP and database
-* CI/CD pipeline configuration
+* Unit tests for modules  
+* Integration tests for IMAP and database  
+* CI/CD pipeline configuration  
 
 ---
 
@@ -52,21 +51,21 @@ Once development progresses, contributions will be organized around these areas:
 
 Please use GitHub Issues for:
 
-* Bug reports
-* Feature requests
-* Documentation improvements
-* Security concerns
+* Bug reports  
+* Feature requests  
+* Documentation improvements  
+* Security concerns  
 
-Be as descriptive as possible, include examples where applicable, and label your issue appropriately.
+Be descriptive, include examples where applicable, and label your issue appropriately.
 
 ---
 
 ## Code Style and Guidelines
 
-* Follow **C++20 standards**.
-* Adhere to `.clang-format` and `.clang-tidy` rules.
-* All new code should include minimal MIT license headers.
-* Respect the modular structure; avoid coupling components unnecessarily.
+* Follow **C++20 standards**.  
+* Adhere to `.clang-format` and `.clang-tidy` rules.  
+* Include minimal MIT license headers in all new code.  
+* Respect the modular structure; avoid unnecessary coupling between components.
 
 ---
 
@@ -78,6 +77,6 @@ By contributing, you agree that your contributions will be licensed under the **
 
 ## Notes
 
-* This project is **under active development**.
-* Contributions may be reorganized as the architecture matures.
-* Contributions outside of Phase 0 are welcome once functionality begins.
+* This project is **under active development**.  
+* Contributions may be reorganized as the architecture evolves.  
+* Contributions beyond Phase 0 are welcome once functionality begins.
