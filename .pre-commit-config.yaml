@@ -19,17 +19,16 @@ repos:
           - --valid-header-ending-pattern=[A-Za-z\d]
           - --maximum-body-line-length=72
 
-  # 3. License header checker
-  - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.1
+  # 3. Custom License Header Inserter
+  - repo: local
     hooks:
-      - id: check-files-have-header
-        files: \.(hpp|cpp|h|c)$
-        args:
-          - --header
-          - |
-            // Copyright (c) 2025 Vijay Vasudevan
-            // Licensed under the MIT License.
+      - id: license-header
+        name: Add License Header
+        entry: python3 scripts/license_header.py
+        language: python
+        types: [c, cpp, h, hpp]
+        pass_filenames: false
+        always_run: true
 
   # 4. Secret scanner (detect API keys, OAuth secrets, etc)
   - repo: https://github.com/gitleaks/gitleaks
