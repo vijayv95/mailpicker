@@ -1,0 +1,52 @@
+repos:
+  # 1. Standard Hooks for general file maintenance
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  # 2. Conventional Commits Enforcer
+  - repo: https://github.com/octue/conventional-commits
+    rev: 0.0.2
+    hooks:
+      - id: check-commit-message-is-conventional
+        stages: [commit-msg]
+        pass_filenames: false
+        args:
+          - --additional-commit-codes=ABC,DEF,GHI
+          - --maximum-header-length=72
+          - --valid-header-ending-pattern=[A-Za-z\d]
+          - --maximum-body-line-length=72
+
+  # 3. License header checker
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.1
+    hooks:
+      - id: check-files-have-header
+        files: \.(hpp|cpp|h|c)$
+        args:
+          - --header
+          - |
+            // Copyright (c) 2025 Vijay Vasudevan
+            // Licensed under the MIT License.
+
+  # 4. Secret scanner (detect API keys, OAuth secrets, etc)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.0
+    hooks:
+      - id: gitleaks
+        args: ["protect", "--staged"]
+
+  # 5. Clang-format
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v17.0.0
+    hooks:
+      - id: clang-format
+
+  # 6. Clang-tidy
+  - repo: https://github.com/pocc/pre-commit-hooks
+    rev: v1.3.5
+    hooks:
+      - id: clang-tidy
+        args: ["-p=build"]
