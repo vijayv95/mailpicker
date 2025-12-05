@@ -1,61 +1,71 @@
+---
+name: Epic
+about: High-level capability, subsystem, or module to be delivered
+title: "[EPIC] "
+labels: epic
+assignees: ""
+---
+
 # Epic: {{ Epic Title }}
 
 ## Summary
 
-A high-level description of the capability, subsystem, or module this epic covers.  
-Describe the purpose, scope, and intended outcomes without going into technical detail.
+Describe the high-level capability or subsystem this epic covers.  
+State the purpose, scope, and intended outcome, without technical deep dives.
 
 ## Goals
 
-- What this epic aims to deliver
-- What functionality or architecture should exist once complete
-- What user or system problem it solves
+List what this epic aims to deliver:
+
+- …
+- …
+- …
 
 ## Non-Goals
 
-- What this epic *does not* include  
-- Deferred concerns  
-- Related but explicitly out-of-scope features
+Explicitly state what is *not* included:
+
+- …
+- …
+- Deferred or related areas that are intentionally out of scope.
 
 ## Motivation
 
-Why this epic exists.  
-Include: architectural reasoning, dependencies, risk factors, or links to higher-level design docs (if any).
+Why this epic exists.
+
+Include architectural reasoning, product/system impact, risks, or links to design notes/specs.
 
 ## Deliverables
 
-List of expected outputs once the epic is completed, e.g.:
+Expected outputs once the epic is complete:
 
-- Module implemented
-- Public API defined
+- Implemented module / subsystem
+- Public API or interface definition
 - Documentation and diagrams
-- Test coverage
-- Integration with other modules
+- Unit/integration tests
+- Integration with dependent components
 
-## Breakdown (Issues Under This Epic)
+## Breakdown (Child Issues)
 
-Use real GitHub issue references once created:
+Convert these to real issue numbers later:
 
-- [ ] #{{ID}} Feature: …
 - [ ] #{{ID}} Feature: …
 - [ ] #{{ID}} Task: …
-- [ ] #{{ID}} Bug: … (if known upfront)
+- [ ] #{{ID}} Bug: … (if applicable)
 
-(These may grow over time.)
+(Additional tasks may be added as the design evolves.)
 
 ## Acceptance Criteria
 
-Define what must be true for the epic to be considered complete:
+The epic is complete when:
 
-- All linked issues resolved
-- All APIs documented
-- No unaddressed security concerns
-- Integration tests passing
-- Behavior matches description in this epic
+- All child issues are resolved
+- APIs and behaviors match this description
+- Documentation is updated
+- No unaddressed security or architectural concerns remain
+- Integration and regression tests pass
 
-## Dependencies
-
-(Optional)  
+## Dependencies (Optional)
 
 - Blocked by: #{{ID}}
 - Blocks: #{{ID}}
@@ -63,4 +73,4 @@ Define what must be true for the epic to be considered complete:
 
 ## Notes
 
-Any decisions, constraints, design principles, or implementation notes.
+Record design decisions, trade-offs, constraints, or implementation details relevant to future maintainers.

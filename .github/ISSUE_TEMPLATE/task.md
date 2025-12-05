@@ -1,38 +1,58 @@
+---
+name: Task
+about: Internal engineering work such as refactoring, cleanup, technical debt, or maintenance
+title: "[TASK] "
+labels: task
+assignees: ""
+---
+
 # Task: {{ Task Title }}
 
 ## Summary
 
-Describe what needs to be done and why.  
-This should focus on internal engineering work, not user-visible features.
+Describe the specific engineering work required and the reason behind it.  
+This is for internal work—NOT user-visible features.
 
 ## Motivation
 
-Why this task is needed (technical debt, cleanup, correctness, preparation, safety, maintainability, etc.).
+Why this task is necessary:
+
+- Technical debt, refactor, cleanup
+- Correctness or safety concerns
+- Preparation for upcoming features
+- Performance or maintainability
 
 ## Scope
 
-Clearly define what is included:
+Define what *is included*:
 
-- Files, modules, or areas of the codebase this task affects
-- Expected modifications or cleanup
-- Any constraints or boundaries
+- The files, modules, or subsystems involved
+- The expected changes or transformations
+- Any boundaries or constraints that must be respected
 
 ## Out of Scope
 
-What this task will *not* touch.
+What this task deliberately avoids:
+
+- …
+- …
 
 ## Requirements
 
-- What must be implemented, refactored, or removed  
-- What tests or documentation need updating (if any)
+Specify what must be done:
+
+- Code to implement, refactor, or remove
+- Tests to add/update/remove
+- Documentation updates (if any)
 
 ## Acceptance Criteria
 
-- The task is complete when these conditions are met:
-  - …
-  - …
-  - Relevant tests updated/passing
-  - No behavior changes outside this task's scope
+Completed when:
+
+- Required changes implemented
+- Tests updated and passing
+- No unintended behavior changes
+- Code meets style, architecture, and safety guidelines
 
 ## Related Issues
 
