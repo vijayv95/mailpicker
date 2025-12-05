@@ -13,6 +13,7 @@
 
 # Linker files
 *.ilk
+.markdownlint-cli2.yaml
 
 # Debugger Files
 *.pdb
