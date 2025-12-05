@@ -19,16 +19,16 @@ repos:
           - --valid-header-ending-pattern=[A-Za-z\d]
           - --maximum-body-line-length=72
 
-  # # 3. Custom License Header Inserter
-  # - repo: local
-  #   hooks:
-  #     - id: license-header
-  #       name: Add License Header
-  #       entry: python3 scripts/license_header.py
-  #       language: python
-  #       types: [c, c++, header]
-  #       pass_filenames: false
-  #       always_run: true
+  # 3. Custom License Header Inserter
+  - repo: local
+    hooks:
+      - id: license-header
+        name: Add License Header
+        entry: python3 scripts/license_header.py
+        language: python
+        types: [c, c++, header]
+        pass_filenames: false
+        always_run: true
 
   # # 4. Secret scanner (detect API keys, OAuth secrets, etc)
   # - repo: https://github.com/zricethezav/gitleaks
